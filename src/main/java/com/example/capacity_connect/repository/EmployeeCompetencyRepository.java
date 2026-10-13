@@ -1,0 +1,14 @@
+package com.example.capacity_connect.repository;
+
+import com.example.capacity_connect.model.EmployeeCompetency;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface EmployeeCompetencyRepository extends JpaRepository<EmployeeCompetency, Long> {
+    List<EmployeeCompetency> findByUserId(Long userId);
+    Optional<EmployeeCompetency> findByUserIdAndCompetencyId(Long userId, Long competencyId);
+}
