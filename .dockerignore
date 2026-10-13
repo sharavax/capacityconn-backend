@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Maven build artifacts
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# Documentation and temporary files
+HELP.md
+*.md
+*.log
+
+# Local environment secrets and IDE configurations
+application-local.properties
+application-*.properties
+!src/main/resources/application-prod.properties
+*.env
+.env
+.idea/
+.vscode/
+*.iml
